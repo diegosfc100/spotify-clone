@@ -79,7 +79,7 @@ body {
 #showcase {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: white;
     background: url("/assets/images/showcase.webp") center center/cover;
@@ -90,17 +90,27 @@ body {
 #showcase .showcase-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin: 65px ;
 }
 
-#showcase .showcase-container h2 {
+#showcase .showcase-container .premium {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+#showcase .showcase-container h1 {
     font-size: 60px;
     line-height: 72px;
+    margin: 15px 0;
 }
 
 #showcase .showcase-container p {
-    margin: 15px 0;
-    font-size: 24px;
+    margin: 0 0 30px;
+    font-size: 22px;
     line-height: 36px;
 }
 
@@ -108,18 +118,17 @@ body {
 #footer { 
     background: black;
     color: white;
-    padding: 80px 0;
+    padding: 70px 0 60px 0;
 }
 
 #footer .footer-content {
     display: flex;
-    width: 60%;
+    width: 90%;
     margin: auto;
     justify-content: space-between;
 }
 
 #footer .footer-content .footer-menu {
-    margin: 0 60px;
     list-style: none;
 }
 
@@ -151,6 +160,21 @@ body {
     transition: all 300ms ease;
 }
 
+.socials .box-socials {
+    align-items: center;
+    background-color: #222326;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Helvetica,Arial,sans-serif;
+    height: 54px;
+    justify-content: center;
+    overflow: hidden;
+    text-align: left;
+    width: 54px;
+    margin-right: 15px;
+  }
+
 .socials i:hover {
     color: var(--default-green);
     cursor: pointer;
@@ -161,12 +185,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    width: 60%;
+    width: 90%;
     margin: auto;
     font-weight: bold;
     color: #919496;
-    font-size: 0.75rem;
-    padding-top: 30px;
+    font-size: 12px;
+    padding-top: 50px;
 }
 
 .footer-info .footer-info-items {
@@ -207,17 +231,3 @@ body {
     margin-left: 10px;
 }
 
-.socials .box-socials {
-    align-items: center;
-    background-color: #222326;
-    border-radius: 50%;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: Helvetica,Arial,sans-serif;
-    height: 54px;
-    justify-content: center;
-    overflow: hidden;
-    text-align: left;
-    width: 54px;
-    margin-right: 15px;
-  }
