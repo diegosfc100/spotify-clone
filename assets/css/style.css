@@ -12,6 +12,9 @@ body {
     background: rgba(0,0,0,0.6);
     color: white;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #navbar .navbar-container {
@@ -39,4 +42,33 @@ body {
 
 #navbar .navbar-container ul li:nth-child(3) {
     border-right: 1px solid white;
+}
+
+/*Showcase*/
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("/assets/images/showcase.webp") center center/cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#showcase .showcase-container h2 {
+    font-size: 60px;
+    line-height: 72px;
+}
+
+#showcase .showcase-container p {
+    margin: 15px 0;
+    font-size: 24px;
+    line-height: 36px;
 }
